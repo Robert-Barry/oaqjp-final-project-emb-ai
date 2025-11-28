@@ -24,8 +24,9 @@ def emot_detector():
         return "Invalid text! Please try again!"
 
     return (f"For the given statement, the system response is 'anger': {response['anger']},"
-            f" 'disgust': {response['disgust']}, 'fear': {response['fear']}, 'joy': {response['joy']}" \
-            f" and 'sadness': {response['sadness']}. The dominant emotion is {response['dominant_emotion']}."
+            f" 'disgust': {response['disgust']}, 'fear': {response['fear']}," \
+            f" 'joy': {response['joy']} and 'sadness': {response['sadness']}." \
+            f" The dominant emotion is {response['dominant_emotion']}."
     )
 
 @app.route('/')
